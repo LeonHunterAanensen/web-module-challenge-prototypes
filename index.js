@@ -32,10 +32,11 @@ function Person(N,A) {
   Person.prototype.poop()
   this.Stomach = [];
   i = 0
+  Person.prototype.toString = function(){
+    return `${this.name},${this.age}`
+  }
 }
-Person.prototype.toString = function(){
-  return `${this.name},${this.age}`
-}
+
 
 /*
   TASK 2
