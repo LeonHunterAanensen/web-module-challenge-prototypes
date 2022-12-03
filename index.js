@@ -21,10 +21,9 @@ function Person(N,A) {
   this.Stomach = [];
 }
 Person.prototype.eat = function(Food){
-  if(i > this.Stomach.length){
+  if(this.Stomach.length < 10){
   this.Stomach.push(Food)
-  i++
-  } else if(i === this.Stomach.length) {
+  } else if( this.Stomach.length === 10) {
     console.log('full');
   } else {
   console.log('somethings wrong')
@@ -32,7 +31,6 @@ Person.prototype.eat = function(Food){
 }
 Person.prototype.poop = function(){
   this.Stomach = [];
-  i = 0
 }
 Person.prototype.toString = function(){
   return `${this.name},${this.age}`
