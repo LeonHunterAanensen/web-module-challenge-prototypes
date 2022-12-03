@@ -23,10 +23,8 @@ function Person(N,A) {
 Person.prototype.eat = function(Food){
   if(this.Stomach.length < 10){
   this.Stomach.push(Food)
-  } else if( this.Stomach.length === 10) {
-    console.log('full');
   } else {
-  console.log('somethings wrong')
+  console.log('full')
   }
 }
 Person.prototype.poop = function(){
