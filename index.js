@@ -19,24 +19,24 @@ function Person(N,A) {
   this.age = A;
   this.name = N;
   this.Stomach = [];
-  Person.prototype.eat = function(Food){
-    if(i > this.Stomach.length){
-    this.Stomach.push(Food)
-    i++
-    } else if(i === this.Stomach.length) {
-      console.log('full');
-    } else {
-    console.log('somethings wrong')
-    }
-  }
-  Person.prototype.poop()
-  this.Stomach = [];
-  i = 0
-  Person.prototype.toString = function(){
-    return `${this.name},${this.age}`
+}
+Person.prototype.eat = function(Food){
+  if(i > this.Stomach.length){
+  this.Stomach.push(Food)
+  i++
+  } else if(i === this.Stomach.length) {
+    console.log('full');
+  } else {
+  console.log('somethings wrong')
   }
 }
-
+Person.prototype.poop = function(){
+  this.Stomach = [];
+  i = 0
+}
+Person.prototype.toString = function(){
+  return `${this.name},${this.age}`
+}
 
 /*
   TASK 2
