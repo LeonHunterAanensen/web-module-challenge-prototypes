@@ -80,9 +80,12 @@ function Car(model,milesPerGallon) {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby() {
-
-}
+function Baby(N,A,T) {
+  this.FT = T
+  console.log(Person(N,A));
+    console.log(`Playing with ${this.FT}`)
+  }
+  Baby('Frankie',3,'Train')
 
 
 /* 
