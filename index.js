@@ -81,10 +81,38 @@ function Car(model,milesPerGallon) {
 */
 
 function Baby(N,A,T) {
-  console.log(Person(N,A));
-  return  console.log(`Playing with ${T}`)
+  Person(N,A)
+  function Person(N,A) {
+    Person.prototype.person = function(N,A) {
+      console.log(this.age = A);
+      console.log(this.name = N);
+      console.log(this.stomach = []);  
+      console.log(this.stomach.length)
+    } 
+    Person.prototype.eat = function(edible){
+      if(this.stomach.length < 10){
+      this.stomach.push(edible)
+        console.log('ate')
+        console.log(this.stomach)
+      } else {
+      console.log('full')
+      }
+    
+    }
+    Person.prototype.poop = function(){
+      this.stomach = [];
+      console.log(this.stomach.length, this.stomach)
+    }
+    Person.prototype.toString = function(){
+      return `${this.name}, ${this.age}`
+    }
+    Person.prototype.person(N,A)
+    }
+    Baby.prototype.play = function(){
+      console.log(this.FT = T)
+      return  console.log(`Playing with ${this.FT}`)
+    }
   }
-  Baby('Frankie',3,'Train')
 
 
 /* 
