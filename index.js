@@ -66,7 +66,7 @@ function Car(model,milesPerGallon) {
     console.log(this.odometer = 0)
   }
   Car.prototype.fill = function(gallons){
-  console.log(this.tank = gallons)  
+  console.log(this.tank = this.tank + gallons)  
   }
   Car.prototype.built(model,milesPerGallon)
   }
