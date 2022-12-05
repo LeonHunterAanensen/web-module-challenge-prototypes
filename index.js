@@ -81,9 +81,8 @@ function Car(model,milesPerGallon) {
 */
 
 function Baby(N,A,T) {
-  this.FT = T
   console.log(Person(N,A));
-    console.log(`Playing with ${this.FT}`)
+  return  console.log(`Playing with ${T}`)
   }
   Baby('Frankie',3,'Train')
 
