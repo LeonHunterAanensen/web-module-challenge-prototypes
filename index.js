@@ -111,9 +111,7 @@ function Baby(N,A,favoriteToy) {
       return  console.log(`Playing with ${this.favoriteToy}`)
     }
   }
-  
-  Baby('Frankie',3,'Train')
-  Baby.prototype.play()
+
 
 
 /* 
