@@ -16,23 +16,31 @@
 */
 
 function Person(N,A) {
-  this.age = A;
-  this.name = N;
-  this.Stomach = [];
-}
-Person.prototype.eat = function(Food){
-  if(this.Stomach.length < 10){
-  this.Stomach.push(Food)
-  } else {
-  console.log('full')
+  Person.prototype.person = function(N,A) {
+    console.log(this.age = A);
+    console.log(this.name = N);
+    console.log(this.stomach = []);  
+    console.log(this.stomach.length)
+  } 
+  Person.prototype.eat = function(edible){
+    if(this.stomach.length < 10){
+    this.stomach.push(edible)
+      console.log('ate')
+      console.log(this.stomach)
+    } else {
+    console.log('full')
+    }
+  
   }
-}
-Person.prototype.poop = function(){
-  this.Stomach = [];
-}
-Person.prototype.toString = function(){
-  return `${this.name},${this.age},${this.Stomach}`
-}
+  Person.prototype.poop = function(){
+    this.stomach = [];
+    console.log(this.stomach.length, this.stomach)
+  }
+  Person.prototype.toString = function(){
+    return console.log( `${this.name},${this.age},${this.stomach}`);
+  }
+  Person.prototype.person(N,A)
+  }
 
 /*
   TASK 2
