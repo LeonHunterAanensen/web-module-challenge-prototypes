@@ -37,7 +37,7 @@ function Person(N,A) {
     console.log(this.stomach.length, this.stomach)
   }
   Person.prototype.toString = function(){
-    return console.log( `${this.name},${this.age}`);
+    return console.log(`"${this.name},${this.age}"`)
   }
   Person.prototype.person(N,A)
   }
