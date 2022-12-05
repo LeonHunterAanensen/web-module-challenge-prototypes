@@ -80,12 +80,13 @@ function Car(model,milesPerGallon) {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 
-function Baby(N,A,favoriteToy) {
+function Baby(N,A,F) {
   Baby.prototype.baby= function(N,A) {
       console.log(this.age = A);
       console.log(this.name = N);
       console.log(this.stomach = []);  
       console.log(this.stomach.length)
+      console.log(this.favoriteToy = F)
     } 
     Baby.prototype.eat = function(edible){
       if(this.stomach.length < 10){
@@ -107,8 +108,7 @@ function Baby(N,A,favoriteToy) {
     }
     Baby.prototype.baby(N,A) 
     Baby.prototype.play = function(){
-      console.log(this.favoriteToy = favoriteToy)
-      return  console.log(`Playing with ${this.favoriteToy}`)
+      return `Playing with ${this.favoriteToy}`
     }
   }
 
